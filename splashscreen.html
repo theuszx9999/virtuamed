@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VirtuaMed</title>
+  <link rel="stylesheet" href="stylescreen.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Tela inicial (Splash) -->
+  <div class="splash-screen" id="splash">
+    <img src="image-removebg-preview.png" alt="Logo VirtuaMed" class="logo">
+  </div>
+
+  <!-- Tela de Login -->
+  <div class="login-container hidden" id="loginContainer">
+    <div class="login-card slide-down">
+      <div class="login-header">
+        <img src="image-removebg-preview.png" alt="Logo VirtuaMed" style="max-width: 200px;">
+        <p>Bem-vindo de volta</p>
+      </div>
+      <form class="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" required>
+        </div>
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox"> Lembrar de mim
+          </label>
+          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+        <button type="submit" class="login-button">Entrar</button>
+      </form>
+      <div class="login-footer">
+        <p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Aguarda 2 segundos antes de mostrar o login
+    setTimeout(() => {
+      document.getElementById('splash').style.opacity = 0;
+      setTimeout(() => {
+        document.getElementById('splash').style.display = 'none';
+        document.getElementById('loginContainer').classList.remove('hidden');
+      }, 500);
+    }, 2000);
+  </script>
+</body>
+</html>

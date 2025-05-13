@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - VirtuaMed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VirtuaMed</div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="doctors.html">Médicos</a>
+                <a href="medical-records.html">Prontuário</a>
+                <a href="prescriptions.html" class="active">Receitas</a>
+                <a href="chat.html">Chat</a>
+            </div>
+            <div class="user-menu">
+                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Usuário" class="user-avatar">
+                <span>Maria Silva</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="prescriptions-main">
+        <div class="prescriptions-header">
+            <h1>Suas Receitas</h1>
+            <div class="prescription-filters">
+                <select class="filter-select">
+                    <option>Todas as receitas</option>
+                    <option>Ativas</option>
+                    <option>Vencidas</option>
+                </select>
+                <input type="text" placeholder="Buscar medicamento..." class="search-input">
+            </div>
+        </div>
+
+        <div class="prescriptions-grid">
+            <div class="prescription-card active">
+                <div class="prescription-status">Ativa</div>
+                <h3>Losartana 50mg</h3>
+                <div class="prescription-details">
+                    <p><strong>Médico:</strong> Dr. Carlos Santos</p>
+                    <p><strong>Data:</strong> 15/03/2024</p>
+                    <p><strong>Validade:</strong> 15/09/2024</p>
+                    <p><strong>Posologia:</strong> 1 comprimido ao dia</p>
+                </div>
+                <div class="prescription-actions">
+                    <button class="primary-button">Solicitar Renovação</button>
+                    <button class="outline-button">Download PDF</button>
+                </div>
+            </div>
+
+            <div class="prescription-card active">
+                <div class="prescription-status">Ativa</div>
+                <h3>Vitamina D 7000ui</h3>
+                <div class="prescription-details">
+                    <p><strong>Médico:</strong> Dra. Ana Silva</p>
+                    <p><strong>Data:</strong> 10/03/2024</p>
+                    <p><strong>Validade:</strong> 10/09/2024</p>
+                    <p><strong>Posologia:</strong> 1 comprimido por semana</p>
+                </div>
+                <div class="prescription-actions">
+                    <button class="primary-button">Solicitar Renovação</button>
+                    <button class="outline-button">Download PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="medication-reminders">
+            <h2>Lembretes de Medicação</h2>
+            <div class="reminders-grid">
+                <div class="reminder-card">
+                    <div class="reminder-time">08:00</div>
+                    <h4>Losartana 50mg</h4>
+                    <p>1 comprimido com água</p>
+                    <label class="reminder-checkbox">
+                        <input type="checkbox">
+                        <span>Tomado hoje</span>
+                    </label>
+                </div>
+
+                <div class="reminder-card">
+                    <div class="reminder-time">20:00</div>
+                    <h4>Vitamina D 7000ui</h4>
+                    <p>1 comprimido com alimentos</p>
+                    <label class="reminder-checkbox">
+                        <input type="checkbox">
+                        <span>Tomado hoje</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

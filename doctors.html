@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Médicos - VirtuaMed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VirtuaMed</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar médicos ou especialidades...">
+                <button class="search-button">Buscar</button>
+            </div>
+            <div class="user-menu">
+                <a href="dashboard.html">Minha Conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="doctors-main">
+        <aside class="filters">
+            <h3>Filtros</h3>
+            <div class="filter-group">
+                <h4>Especialidade</h4>
+                <label><input type="checkbox"> Cardiologia</label>
+                <label><input type="checkbox"> Dermatologia</label>
+                <label><input type="checkbox"> Pediatria</label>
+                <label><input type="checkbox"> Psiquiatria</label>
+            </div>
+            <div class="filter-group">
+                <h4>Disponibilidade</h4>
+                <label><input type="checkbox"> Hoje</label>
+                <label><input type="checkbox"> Esta semana</label>
+                <label><input type="checkbox"> Próxima semana</label>
+            </div>
+            <div class="filter-group">
+                <h4>Tipo de Consulta</h4>
+                <label><input type="checkbox"> Teleconsulta</label>
+                <label><input type="checkbox"> Presencial</label>
+            </div>
+        </aside>
+
+        <section class="doctors-grid">
+            <div class="doctor-card">
+                <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg" alt="Dra. Ana Cardoso">
+                <div class="doctor-info">
+                    <h3>Dra. Ana Cardoso</h3>
+                    <p class="specialty">Cardiologista</p>
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+                    </div>
+                    <p class="experience">15 anos de experiência</p>
+                    <div class="next-available">
+                        <p>Próxima disponibilidade:</p>
+                        <p class="date">Hoje, 14:30</p>
+                    </div>
+                    <button class="primary-button">Agendar Consulta</button>
+                </div>
+            </div>
+
+            <div class="doctor-card">
+                <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" alt="Dr. Ricardo Mendes">
+                <div class="doctor-info">
+                    <h3>Dr. Ricardo Mendes</h3>
+                    <p class="specialty">Dermatologista</p>
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐ <span>(4.8)</span>
+                    </div>
+                    <p class="experience">10 anos de experiência</p>
+                    <div class="next-available">
+                        <p>Próxima disponibilidade:</p>
+                        <p class="date">Amanhã, 09:00</p>
+                    </div>
+                    <button class="primary-button">Agendar Consulta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

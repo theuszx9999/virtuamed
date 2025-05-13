@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - VirtuaMed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VirtuaMed</div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="doctors.html">Médicos</a>
+                <a href="medical-records.html">Prontuário</a>
+                <a href="prescriptions.html">Receitas</a>
+                <a href="chat.html" class="active">Chat</a>
+            </div>
+            <div class="user-menu">
+                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Usuário" class="user-avatar">
+                <span>Maria Silva</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="chat-main">
+        <div class="chat-sidebar">
+            <div class="chat-search">
+                <input type="text" placeholder="Buscar conversas..." class="search-input">
+            </div>
+            
+            <div class="chat-contacts">
+                <div class="contact-card active">
+                    <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg" alt="Dr. Carlos Santos" class="contact-avatar">
+                    <div class="contact-info">
+                        <h4>Dr. Carlos Santos</h4>
+                        <p>Cardiologista</p>
+                        <span class="last-message">Ótimo, continue monitorando...</span>
+                    </div>
+                    <div class="contact-meta">
+                        <span class="message-time">14:30</span>
+                        <span class="unread-count">2</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <img src="https://images.pexels.com/photos/5214961/pexels-photo-5214961.jpeg" alt="Dra. Ana Silva" class="contact-avatar">
+                    <div class="contact-info">
+                        <h4>Dra. Ana Silva</h4>
+                        <p>Nutricionista</p>
+                        <span class="last-message">Lembre de registrar sua alimentação...</span>
+                    </div>
+                    <div class="contact-meta">
+                        <span class="message-time">Ontem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-content">
+            <div class="chat-header">
+                <div class="chat-contact">
+                    <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg" alt="Dr. Carlos Santos" class="contact-avatar">
+                    <div class="contact-info">
+                        <h4>Dr. Carlos Santos</h4>
+                        <p>Cardiologista • Online</p>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="outline-button">Iniciar Videochamada</button>
+                    <button class="outline-button">Ver Prontuário</button>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message-date">Hoje</div>
+                
+                <div class="message received">
+                    <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg" alt="Dr. Carlos Santos" class="message-avatar">
+                    <div class="message-content">
+                        <p>Bom dia Maria! Como está se sentindo hoje?</p>
+                        <span class="message-time">09:30</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>Bom dia doutor! Estou me sentindo bem melhor. A pressão tem se mantido estável.</p>
+                        <span class="message-time">09:35</span>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <img src="https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg" alt="Dr. Carlos Santos" class="message-avatar">
+                    <div class="message-content">
+                        <p>Ótimo! Continue monitorando e registrando os valores. Qualquer alteração me avise.</p>
+                        <span class="message-time">09:40</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="Digite sua mensagem..." class="message-input">
+                <div class="input-actions">
+                    <button class="attachment-button">Anexar</button>
+                    <button class="send-button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

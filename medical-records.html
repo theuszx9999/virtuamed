@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário Médico - VirtuaMed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VirtuaMed</div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="doctors.html">Médicos</a>
+                <a href="medical-records.html" class="active">Prontuário</a>
+                <a href="prescriptions.html">Receitas</a>
+                <a href="chat.html">Chat</a>
+            </div>
+            <div class="user-menu">
+                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Usuário" class="user-avatar">
+                <span>Maria Silva</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="medical-records-main">
+        <div class="records-header">
+            <h1>Seu Histórico Médico</h1>
+            <div class="records-actions">
+                <button class="primary-button">Adicionar Novo Registro</button>
+                <button class="outline-button">Compartilhar Histórico</button>
+            </div>
+        </div>
+
+        <div class="records-grid">
+            <div class="record-card">
+                <div class="record-type">Consulta</div>
+                <h3>Consulta Cardiologista</h3>
+                <p class="record-date">15 de Março, 2024</p>
+                <p class="record-doctor">Dr. Carlos Santos</p>
+                <div class="record-details">
+                    <p><strong>Diagnóstico:</strong> Hipertensão leve</p>
+                    <p><strong>Prescrição:</strong> Losartana 50mg</p>
+                    <p><strong>Observações:</strong> Retorno em 3 meses</p>
+                </div>
+                <div class="record-actions">
+                    <button class="secondary-button">Ver Detalhes</button>
+                    <button class="outline-button">Download PDF</button>
+                </div>
+            </div>
+
+            <div class="record-card">
+                <div class="record-type">Exame</div>
+                <h3>Hemograma Completo</h3>
+                <p class="record-date">10 de Março, 2024</p>
+                <p class="record-doctor">Laboratório Central</p>
+                <div class="record-details">
+                    <p><strong>Status:</strong> Dentro dos valores de referência</p>
+                    <p><strong>Observações:</strong> Repetir em 6 meses</p>
+                </div>
+                <div class="record-actions">
+                    <button class="secondary-button">Ver Resultados</button>
+                    <button class="outline-button">Download PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="records-timeline">
+            <h2>Linha do Tempo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Março 2024</div>
+                    <div class="timeline-content">
+                        <h4>Consulta Cardiologista</h4>
+                        <p>Acompanhamento regular</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Fevereiro 2024</div>
+                    <div class="timeline-content">
+                        <h4>Exame de Sangue</h4>
+                        <p>Checkup anual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
